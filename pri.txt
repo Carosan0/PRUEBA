@@ -1,0 +1,228 @@
+la prueba 
+jdkjfkjfdlaldjkasjld
+
+subir repositorios pro
+
+
+
+
+
+carolina.sanchez.p@IBA-RENOV-T-006 MINGW64 ~/Documents/prueba (master)
+$ code
+
+carolina.sanchez.p@IBA-RENOV-T-006 MINGW64 ~/Documents/prueba (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   pri.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        prueba2.html
+
+
+carolina.sanchez.p@IBA-RENOV-T-006 MINGW64 ~/Documents/prueba (master)
+$ ls prueba2.html
+prueba2.html
+
+carolina.sanchez.p@IBA-RENOV-T-006 MINGW64 ~/Documents/prueba (master)
+$ ls prueba2.html pri.txt
+pri.txt  prueba2.html
+
+carolina.sanchez.p@IBA-RENOV-T-006 MINGW64 ~/Documents/prueba (master)
+$ ls
+pri.txt  prueba2.html
+
+carolina.sanchez.p@IBA-RENOV-T-006 MINGW64 ~/Documents/prueba (master)
+$ ls al
+ls: cannot access 'al': No such file or directory
+
+carolina.sanchez.p@IBA-RENOV-T-006 MINGW64 ~/Documents/prueba (master)
+$ ls -al
+total 10
+drwxr-xr-x 1 carolina.sanchez.p 1049089   0 Jun 10 10:03 ./
+drwxr-xr-x 1 carolina.sanchez.p 1049089   0 Jun 10 09:12 ../
+drwxr-xr-x 1 carolina.sanchez.p 1049089   0 Jun 10 10:04 .git/
+-rw-r--r-- 1 carolina.sanchez.p 1049089  53 Jun 10 09:37 pri.txt
+-rw-r--r-- 1 carolina.sanchez.p 1049089 287 Jun 10 10:03 prueba2.html
+
+carolina.sanchez.p@IBA-RENOV-T-006 MINGW64 ~/Documents/prueba (master)
+$ git add .
+
+carolina.sanchez.p@IBA-RENOV-T-006 MINGW64 ~/Documents/prueba (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   pri.txt
+        new file:   prueba2.html
+
+
+carolina.sanchez.p@IBA-RENOV-T-006 MINGW64 ~/Documents/prueba (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   pri.txt
+        new file:   prueba2.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   prueba2.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        css/
+        style.css
+
+
+carolina.sanchez.p@IBA-RENOV-T-006 MINGW64 ~/Documents/prueba (master)
+$ git diff
+diff --git a/prueba2.html b/prueba2.html
+index c6e456a..582876f 100644
+--- a/prueba2.html
++++ b/prueba2.html
+@@ -3,6 +3,7 @@
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <link rel="stylesheet" href="css/estilo.css">
+     <title>Document</title>
+ </head>
+ <body>
+
+carolina.sanchez.p@IBA-RENOV-T-006 MINGW64 ~/Documents/prueba (master)
+$ git add .
+
+carolina.sanchez.p@IBA-RENOV-T-006 MINGW64 ~/Documents/prueba (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   css/estilo.css
+        modified:   pri.txt
+        new file:   prueba2.html
+        new file:   style.css
+
+
+carolina.sanchez.p@IBA-RENOV-T-006 MINGW64 ~/Documents/prueba (master)
+$ git commit -m "los cambios han sido modificados"
+[master 6f28727] los cambios han sido modificados
+ 4 files changed, 22 insertions(+), 1 deletion(-)
+ create mode 100644 css/estilo.css
+ create mode 100644 prueba2.html
+ create mode 100644 style.css
+
+carolina.sanchez.p@IBA-RENOV-T-006 MINGW64 ~/Documents/prueba (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+carolina.sanchez.p@IBA-RENOV-T-006 MINGW64 ~/Documents/prueba (master)
+$ git log
+commit 6f2872722dc3de55bf4a7cb5a235e46bd68a5325 (HEAD -> master)
+Author: carosan´.palacio5@gmail.com <carosan.palacio5@gmail.com>
+Date:   Sat Jun 10 10:21:11 2023 -0500
+
+    los cambios han sido modificados
+
+commit 251d0e32fbaeb0ef0a8eca219422bf21bdae51f5
+Author: carosan´.palacio5@gmail.com <carosan.palacio5@gmail.com>
+Date:   Sat Jun 10 09:30:27 2023 -0500
+
+    este es una prueba modificada para subir al repositorio
+
+commit 90e85b3308b362218079028a5889c8cc249be9db
+Author: Carosan0 <carosan.palacio5@gmail.com>
+Date:   Sat Jun 10 09:18:49 2023 -0500
+
+    subir la prueba
+
+carolina.sanchez.p@IBA-RENOV-T-006 MINGW64 ~/Documents/prueba (master)
+$ git add .
+
+carolina.sanchez.p@IBA-RENOV-T-006 MINGW64 ~/Documents/prueba (master)
+$ git commit -m "subida"
+[master 3a5a1ff] subida
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+carolina.sanchez.p@IBA-RENOV-T-006 MINGW64 ~/Documents/prueba (master)
+$ git log
+commit 3a5a1ff8463c6a2f40c273a426b76225ee18515d (HEAD -> master)
+Author: carosan´.palacio5@gmail.com <carosan.palacio5@gmail.com>
+Date:   Sat Jun 10 10:23:05 2023 -0500
+
+    subida
+
+commit 6f2872722dc3de55bf4a7cb5a235e46bd68a5325
+Author: carosan´.palacio5@gmail.com <carosan.palacio5@gmail.com>
+Date:   Sat Jun 10 10:21:11 2023 -0500
+
+    los cambios han sido modificados
+
+commit 251d0e32fbaeb0ef0a8eca219422bf21bdae51f5
+Author: carosan´.palacio5@gmail.com <carosan.palacio5@gmail.com>
+Date:   Sat Jun 10 09:30:27 2023 -0500
+
+    este es una prueba modificada para subir al repositorio
+
+commit 90e85b3308b362218079028a5889c8cc249be9db
+Author: Carosan0 <carosan.palacio5@gmail.com>
+Date:   Sat Jun 10 09:18:49 2023 -0500
+
+    subir la prueba
+:
+
+
+----------------------------------------------------------------------------------------
+
+
+carolina.sanchez.p@IBA-RENOV-T-006 MINGW64 ~/Documents/prueba (master)
+$ git remote add origin https://github.com/Carosan0/Proyectos.git
+
+carolina.sanchez.p@IBA-RENOV-T-006 MINGW64 ~/Documents/prueba (master)
+$ git remote
+origin
+
+carolina.sanchez.p@IBA-RENOV-T-006 MINGW64 ~/Documents/prueba (master)
+$ git remote -v
+origin  https://github.com/Carosan0/Proyectos.git (fetch)
+origin  https://github.com/Carosan0/Proyectos.git (push)
+
+carolina.sanchez.p@IBA-RENOV-T-006 MINGW64 ~/Documents/prueba (master)
+$ ls -al
+total 25
+drwxr-xr-x 1 carolina.sanchez.p 1049089    0 Jun 10 10:09 ./
+drwxr-xr-x 1 carolina.sanchez.p 1049089    0 Jun 10 09:12 ../
+drwxr-xr-x 1 carolina.sanchez.p 1049089    0 Jun 10 11:48 .git/
+drwxr-xr-x 1 carolina.sanchez.p 1049089    0 Jun 10 10:18 css/
+-rw-r--r-- 1 carolina.sanchez.p 1049089 5374 Jun 10 10:24 pri.txt
+-rw-r--r-- 1 carolina.sanchez.p 1049089  563 Jun 10 10:57 prueba2.html
+-rw-r--r-- 1 carolina.sanchez.p 1049089   33 Jun 10 10:15 style.css
+
+carolina.sanchez.p@IBA-RENOV-T-006 MINGW64 ~/Documents/prueba (master)
+$ git push origin master
+Enumerating objects: 19, done.
+Counting objects: 100% (19/19), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (19/19), 2.73 KiB | 186.00 KiB/s, done.
+Total 19 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), done.
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/Carosan0/Proyectos/pull/new/master
+remote:
+To https://github.com/Carosan0/Proyectos.git
+ * [new branch]      master -> master
+
+carolina.sanchez.p@IBA-RENOV-T-006 MINGW64 ~/Documents/prueba (master)
+$ git pull origin master
+From https://github.com/Carosan0/Proyectos
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+carolina.sanchez.p@IBA-RENOV-T-006 MINGW64 ~/Documents/prueba (master)
+$ git pull origin master --allow
